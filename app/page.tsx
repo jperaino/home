@@ -4,8 +4,8 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="min-w-screen min-h-screen pt-10">
-      <div className="container mx-auto max-w-2xl">
+    <main className="min-w-screen pt-10 min-h-screen flex flex-col">
+      <div className="container mx-auto max-w-2xl flex flex-col flex-grow">
         <div className="flex justify-between">
           <div>
             <p className="text-l font-bold">Jim Peraino</p>
@@ -32,6 +32,11 @@ export default function Home() {
             </a>
             <ModeToggle />
           </div>
+        </div>
+        <div className="mt-auto py-6">
+          <p className="text-xs text-gray-400">
+            © {new Date().getFullYear()} Jim Peraino. All rights reserved.
+          </p>
         </div>
       </div>
     </main>
