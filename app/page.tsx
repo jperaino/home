@@ -1,8 +1,6 @@
 import ProjectCard from "@/components/core/ProjectCard";
 import { projects } from "./data/projects";
 
-export const PADDING_X = 3;
-
 export default function Home() {
   return (
     <>

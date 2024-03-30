@@ -1,4 +1,3 @@
-import { PADDING_X } from "@/app/page";
 import React from "react";
 import { Button } from "../ui/button";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -7,7 +6,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <div className={`flex justify-between px-${PADDING_X}`}>
+    <div className={`flex justify-between px-3`}>
       <Link href="/">
         <div>
           <p className="text-l font-bold">Jim Peraino</p>
