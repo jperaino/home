@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "./styles/themeProvider";
 import Header from "@/components/core/Header";
 import Footer from "@/components/core/Footer";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <body className={inter.className}>
+          <SpeedInsights />
           <main className="min-w-screen pt-10 min-h-screen flex flex-col">
             <div className="container mx-auto max-w-2xl flex flex-col flex-grow">
               <Header />
