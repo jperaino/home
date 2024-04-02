@@ -27,7 +27,7 @@ export default function RootLayout({
           <SpeedInsights />
           <Analytics />
           <main className="min-w-screen pt-10 min-h-screen flex flex-col">
-            <div className="container mx-auto max-w-2xl flex flex-col flex-grow">
+            <div className="container px-1 mx-auto max-w-2xl flex flex-col flex-grow">
               <Header />
               <div className="flex flex-col pt-20">{children}</div>
               <Footer />
