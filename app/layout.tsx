@@ -6,6 +6,9 @@ import Header from "@/components/core/Header";
 import Footer from "@/components/core/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
+import ReactGA from "react-ga4";
+
+ReactGA.initialize("G-66NPF35TF8");
 
 const inter = Inter({ subsets: ["latin"] });
 
