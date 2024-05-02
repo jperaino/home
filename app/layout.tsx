@@ -6,9 +6,7 @@ import Header from "@/components/core/Header";
 import Footer from "@/components/core/Footer";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
-import ReactGA from "react-ga4";
-
-ReactGA.initialize("G-66NPF35TF8");
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -37,6 +35,7 @@ export default function RootLayout({
             </div>
           </main>
         </body>
+        <GoogleAnalytics gaId="G-66NPF35TF8" />
       </ThemeProvider>
     </html>
   );
